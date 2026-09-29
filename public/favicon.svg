@@ -1,31 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <!-- Fondo -->
-  <rect width="64" height="64" rx="12" fill="#000000"/>
-
-  <!-- Punto -->
-  <circle cx="18" cy="20" r="3" fill="#C6FF00"/>
-
-  <!-- D blanca -->
-  <path d="
-    M28 16
-    H40
-    A16 16 0 0 1 40 48
-    H28
-    L28 42
-    H38
-    A10 10 0 0 0 38 22
-    H28
-    Z"
-    fill="#E6E6E6"/>
-
-  <!-- P verde extendida -->
-  <path d="
-    M22 26
-    H36
-    A6 6 0 0 1 36 38
-    H26
-    L26 50
-    L22 56
-    Z"
-    fill="#C6FF00"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768">
+  <rect width="768" height="768" fill="#000"/>
+  <path d="M227 228 69 374l158 146v-52L123 374l104-93zM543 228l156 146-156 146v-52l102-94-102-93z" fill="#baff00"/>
+  <path d="M272 229h125c60 0 108 52 108 124h-52c0-40-24-71-58-71h-73v222l-50-47z" fill="#fff"/>
+  <path d="M345 353h50v44c32 0 58-19 58-44h52c0 52-48 92-110 92v59l-50 49z" fill="#baff00"/>
 </svg>

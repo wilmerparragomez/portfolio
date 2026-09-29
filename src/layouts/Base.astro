@@ -6,7 +6,6 @@ interface Props {
 const { title = 'Wilmer Parra Gómez — Desarrollador Full Stack | DevsParra' } = Astro.props;
 
 import '../components/features/styles.css';
-import SpeedInsights from '@vercel/speed-insights/astro';
 ---
 
 <!doctype html>
@@ -53,7 +52,6 @@ import SpeedInsights from '@vercel/speed-insights/astro';
 
     <link rel="preload" as="image" href="/images/profile.webp" imagesrcset="/images/profile.webp" imagesizes="340px" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/profile.png" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/images/profile.png" />
     <meta name="apple-mobile-web-app-title" content="DevsParra" />
@@ -157,7 +155,6 @@ import SpeedInsights from '@vercel/speed-insights/astro';
     })} />
   </head>
   <body class="bg-obsidian text-offWhite">
-    <SpeedInsights />
     <slot />
     <noscript>
       <div style="max-width: 720px; margin: 0 auto; padding: 48px 24px; color: #f5f5f7; font-family: system-ui, sans-serif;">
