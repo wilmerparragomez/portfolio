@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import { useSupabase } from '@/composables/useSupabase';
@@ -8,7 +8,7 @@ import type { Project } from '@/types/portfolio';
 const { locale, t } = useI18n();
 const { portfolioState } = useSupabase();
 
-const projects = computed(() => portfolioState.projects.slice(0, 3));
+const projects = computed(() => portfolioState.projects);
 const currentIndex = ref(0);
 const isTransitioning = ref(false);
 
@@ -51,7 +51,7 @@ function next() {
       <div class="mb-3 flex flex-wrap items-start justify-between gap-6">
         <div class="max-w-2xl">
           <h2 class="mb-3 font-display text-[40px] font-black leading-[1.05] tracking-[-0.02em] text-offWhite lg:text-[48px]">
-            Proyectos <span class="gradient-volt">destacados</span>
+            Algunos <span class="gradient-volt">proyectos realizados</span>
           </h2>
           <p class="text-[16px] leading-[1.65] text-offWhite/65">
             {{ t('projects.intro') }}
@@ -66,7 +66,7 @@ function next() {
         </a>
       </div>
 
-      <div class="mb-4 flex items-center justify-between gap-6">
+      <div class="mb-4 flex flex-wrap items-center justify-between gap-4">
         <div class="flex items-center gap-2" aria-hidden="true">
           <button
             type="button"
@@ -87,7 +87,7 @@ function next() {
             <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
           </button>
         </div>
-        <div class="flex items-center gap-2" v-if="projects.length > 1">
+        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2" v-if="projects.length > 1">
           <button
             v-for="(_, index) in projects"
             :key="index"

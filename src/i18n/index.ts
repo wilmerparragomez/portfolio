@@ -43,7 +43,7 @@ export const messages = {
       },
     },
     projects: {
-      intro: 'Una muestra de proyectos realizados o propios que solventan una solución real sistemática.',
+      intro: 'Una muestra de proyectos realizados de forma independiente como freelance y propios que solventan una problemática real sistemática y en algunos casos demuestran mis habilidades para mantener y gestionar proyectos propios que beneficien al público.',
       quickBrief: 'Brief rápido',
       goToProject: 'Ir al proyecto {index}',
       previousProject: 'Proyecto anterior',
